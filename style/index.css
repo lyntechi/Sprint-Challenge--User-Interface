@@ -32,6 +32,8 @@ footer, header, hgroup, menu, nav, section {
   
   box-sizing: border-box;
   max-width: 100%;
+  /* border: solid 2px red; */
+ 
 }
 
 header {
@@ -43,7 +45,7 @@ header {
     width: 800px;
     margin:0 auto;
     align-items: flex-start;
-    
+   
     
 }
 
@@ -67,13 +69,15 @@ nav a {
     margin-right: 5%;
     margin-left: 5%;
     color: black;
+    
 }
 nav a:hover {
     background-color: orange;
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
+    
 }
 ol, ul {
 	list-style: none;
@@ -96,17 +100,15 @@ table {
 }
 
 html, body {
-    height: 100%;
+    
     font-family: 'Roboto', sans-serif;
     width: 800px;
     margin: 0 auto;
     
-    
 }
 
-div.box1 {
+#box-one{
     color: teal;
-
 }
 
 h1, h2, h3, h4, h5 {
@@ -120,7 +122,7 @@ p {
 }
 
 .container {
-    width: 800px;
+    width: 100%;
     margin: 0 auto;
    
     
@@ -133,17 +135,20 @@ p {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
     margin-top: 3%;
+    
 }
 
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
+
 }
 
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    
 }
 
 .middle-content h2 {
@@ -155,6 +160,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .middle-content .boxes .box {
@@ -172,6 +178,7 @@ p {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+    
 }
 
 .bottom-content .text-container {
@@ -186,6 +193,7 @@ footer {
     width: 100%;
     background: black;
     
+    
    
     
     
@@ -198,6 +206,7 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    margin: 0;
     
 }
 
@@ -205,6 +214,12 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
+
+
+
+
 
 
 
@@ -243,6 +258,7 @@ footer nav a {
         margin-right: 20%;
         
         
+        
     }
   .middle-content * {
       display: flex;
@@ -260,21 +276,17 @@ footer nav a {
       
       
   }
-  footer *{
+  footer {
       display: flex;
       flex-direction: column;
       justify-content: center;
       justify-items: center;
       padding-left: 65%;
+      
   }
- footer h2 {
-     padding-bottom: 0;
- }
+ 
  .container {
      width: 80%;
  }
- 
-
-
-
 }
+ 
