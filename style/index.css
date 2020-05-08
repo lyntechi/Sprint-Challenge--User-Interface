@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 
 *{
   
-   box-sizing: border-box;
-   border: solid red 1px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 header {
@@ -97,6 +97,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     width: 800px;
     margin: 0 auto;
+    
     
 }
 
@@ -195,4 +196,11 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media(max-width: 500px ){
+    header {
+        display: flex;
+        flex-direction: column;
+    }
 }
