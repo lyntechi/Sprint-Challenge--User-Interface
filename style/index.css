@@ -226,27 +226,93 @@ footer nav a {
 
 
 
-@media(max-width: 500px){
+@media only screen and (min-width: 500px){
     header {
         display: flex;
         flex-direction: column;
+        
         
     }
     nav {
        display: flex;
        flex-direction: column;
+       align-items: center;
     }
-
+    
+    nav a {
+        padding-bottom: 0.9%;
+        font-weight: 100;
+        color: darkslategray;
+        font-size: 1.8rem;
+    }
   
     .container {
         width: 100%;
     }
     body {
         width: 100%;
-    };
+    }
+   
+    nav img {
+        margin-bottom: 5%;
+    }
+    .jumbo img {
+        
+        height: 40vh;
+        align-self: center;
+       
+    
+       
+    }
+    .text-container > p {
+        font-size: 1.2rem;
+    }
+    .text-container > h2 {
+        font-size: 2rem;
+    }
+    .jumbo {
+        width: 100%;
+    }
+    .top-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        margin-top: 4%;
+    
+        
+    }
+ 
+       .boxes {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .middle-content > h2 {
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+    .bottom-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    .text-container {
+        width: 35%;
+        padding-bottom: 4%;
+    }
+
+    h2 {
+        margin-bottom: 1%;
+        
+    }
+
+    footer >  nav{
+        width: 100%;
+    }
 }
-
-
 
 
 
