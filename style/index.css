@@ -32,7 +32,7 @@ footer, header, hgroup, menu, nav, section {
   
   box-sizing: border-box;
   max-width: 100%;
- 
+  
 }
   
 
@@ -253,25 +253,27 @@ footer nav a {
 }
 
 
-
-@media only screen and (max-width: 500px){
+/* 
+/* @media (min-width: 500px){
     header {
         display: flex;
         flex-direction: column;
         
         
     }
-    nav {
+    header nav {
        display: flex;
        flex-direction: column;
        align-items: center;
+     
     }
     
-    nav a {
+    header nav a {
         padding-bottom: 0.9%;
         font-weight: 100;
         color: darkslategray;
         font-size: 1.8rem;
+        padding-bottom: 2%;
     }
   
     .container {
@@ -281,7 +283,7 @@ footer nav a {
         width: 100%;
     }
    
-    nav img {
+    header nav img {
         margin-bottom: 5%;
     }
     .jumbo img {
@@ -310,7 +312,47 @@ footer nav a {
     
         
     }
-    
+    #box-one {
+        width: 30%;
+        height: 150px;
+        
+    }
+    #box-two {
+        width: 30%;
+        height:150px;
+    }
+    #box-three {
+        width: 30%;
+        height: 150px;
+    }
+    #box-four {
+        width: 30%;
+        height: 150px;
+    }
+    #box-five {
+        width: 30%;
+        height: 150px;
+    }
+    #box-six {
+        width: 30%;
+        height:150px;
+    }
+    #box-seven {
+        width: 30%;
+        height:150px;
+    }
+    #box-eight {
+        width: 30%;
+        height: 150px;
+    }
+    #box-nine {
+        width: 30%;
+        height: 150px;
+    }
+    #box-ten {
+        width: 30%;
+        height: 150px;
+    }
        .boxes {
         display: flex;
         flex-direction: column;
@@ -323,12 +365,29 @@ footer nav a {
         
     }
     .bottom-content {
-        display: flex;
+        Display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
+        margin-top: 4%;
     }
-    .text-container {
+
+    
+body > div > section.top-content > p{
+    width: 100%;
+}
+body > div > section.top-content > .text-container {
+    width: 75%;
+}
+
+body > div > section.bottom-content > p{
+    width: 100%;
+}
+body > div > section.bottom-content > .text-container {
+    width: 75%;
+}
+
+   .bottom-content .text-container {
         width: 35%;
         padding-bottom: 4%;
     }
@@ -340,40 +399,54 @@ footer nav a {
 
     footer >  nav{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer {
+        margin-top: 10%;
     }
 
+    footer nav a {
+        font-size: 1.5rem;
+       padding: 1.2%;
+    } */
 
-    @media only screen and (min-width: 800px){
+  
+
+
+    @media (min-width: 800px)
+   
+
+    {
         header {
             display: flex;
             flex-direction: column;
             
             
         }
-        nav {
+            header nav {
            display: flex;
-           flex-direction: row;
+           flex-direction: row; 
            align-items: center;
            margin: 1% 0;
+           width: 100%;
+           padding-bottom: 1%;
            
         }
         
-        nav a {
+        header nav a {
             padding-bottom: 0.9%;
             font-weight: 100;
             color: darkslategray;
-            font-size: 1.8rem;
+            width: 40%;
+            text-align: left;
+           
+        }
+     
+        
 
-        }
-      
-        .container {
-            width: 100%;
-        }
-        body {
-            width: 100%;
-        }
-       
-        nav img {
+
+        header nav img {
             margin-bottom: 5%;
             padding-top: 2%;
         }
@@ -393,57 +466,131 @@ footer nav a {
         .text-container > h2 {
             font-size: 2rem;
         }
+
+       
         .jumbo {
             width: 100%;
         }
         .top-content {
             
             margin-top: 4%;
+            display: flex;
+            flex-direction: column
+           
             
+        }
+
+        .top-content .text-container {
+            width: 80%;
         }
 
         .middle-content {
             display: flex;
             flex-direction: column;
-            align-content: stretch;
+            align-content: center;
+            
+            
+            
+            
+        }
+        .boxes {
+            display: flex;
+            flex-direction: row;
+
+        }
+        .box {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 29%;
             
             
         }
      
-           .boxes {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            flex-basis: 2%;
-            flex-wrap: wrap;
+        #box-one {
+            width: 25%;
+            height: 200px;
+            
         }
-
+        #box-two {
+            width: 25%;
+            height:200px;
+        }
+        #box-three {
+            width: 25%;
+            height: 200px;
+        }
+        #box-four {
+            width: 25%;
+            height: 200px;
+        }
+        #box-five {
+            width: 25%;
+            height: 200px;
+        }
+        #box-six {
+            width: 25%;
+            height:200px;
+        }
+        #box-seven {
+            width: 25%;
+            height:200px;
+        }
+        #box-eight {
+            width: 25%;
+            height: 200px;
+        }
+        #box-nine {
+            width: 25%;
+            height: 200px;
+        }
+        #box-ten {
+            width: 25%;
+            height: 200px;
+        }
         
-        }
         .middle-content > h2 {
-            text-align: center;
+            text-align: left;
             font-size: 2rem;
             
         }
+
         .bottom-content {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            align-content: center;
+            flex-direction: row;
+            width: 100%;
+            margin-left: -0.8%;
+           
+          
         }
+
+        .bottom-content > .text-container {
+            height: 300px;
+            
+        }
+
      
         
         h2 {
             margin-bottom: 1%;
             
         }
-    
-        footer >  nav{
-            width: 100%;
+        
+        footer nav {
+            display: flex;
+            flex-direction: row;
+           
+            padding: 7% 0;
+
+        }
+        footer nav a {
+           margin-right: -3% ;
+            text-align: center;
+            font-size: 1.5rem;
         }
 
+        
 
 }
 
 
-
+}
