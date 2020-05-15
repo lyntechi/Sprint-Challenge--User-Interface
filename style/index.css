@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -28,8 +27,22 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+*{
+  
+  box-sizing: border-box;
+  max-width: 100%;
+ 
+
+  
+}
+  
+
+
 body {
-	line-height: 1;
+    line-height: 1;
+    
+    
 }
 ol, ul {
 	list-style: none;
@@ -47,100 +60,590 @@ table {
 	border-spacing: 0;
 }
 
-* {
-    box-sizing: border-box;
-}
+
 
 html, body {
-    height: 100%;
+    
     font-family: 'Roboto', sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    
 }
+
+  
+
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
+    font-weight: bold;
 }
 
 p {
     line-height: 1.4;
 }
 
+
+
 .container {
-    width: 800px;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;  
 }
+ 
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: 3%; 
+    justify-content: space-between;
+
+}
+
+ 
+ nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+} 
+
+nav a:hover {
+    background-color: orange;
+}
+
+
 
 .top-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    /* flex-wrap: wrap ; */
+    justify-content: space-between;
+    margin: 2% 0;
     border-bottom: 1px dashed black;
+    
+    
+    
 }
 
 .top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    width: 100%;
+     padding: 2%; 
+     
+
 }
 
-.middle-content {
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
-}
 
-.middle-content h2 {
-    padding: 0 2%;
-    margin-bottom: 0;
-}
 
-.middle-content .boxes {
+.middle-content * {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
+    
+} 
+
+.middle-content .boxes1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+.middle-content .boxes2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+#box-one {
+    width: 100px;
+    height: 100px;
+     background-color: teal;
+     margin: 2%;
+     text-align: center; 
+        
+    
+     
+    
+}
+#box-two {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    margin: 2%;
+    text-align: center; 
+}
+#box-three {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 2%;
+    text-align: center; 
+}
+#box-four {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin: 2%;
+    text-align: center; 
+}
+#box-five {
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+    margin: 2%;
+    text-align: center; 
+}
+#box-six {
+    width: 100px;
+    height: 100px;
+    background-color: forestgreen;
+    margin: 2%;
+    text-align: center; 
+}
+#box-seven {
+    width: 100px;
+    height: 100px;
+    background-color: darkorchid;
+    margin: 2%;
+    text-align: center; 
+}
+#box-eight {
+    width: 100px;
+    height: 100px;
+    background-color: hotpink;
+    margin: 2%;
+    text-align: center; 
+  
+}
+#box-nine {
+    width: 100px;
+    height: 100px;
+    background-color: indigo;
+    margin: 2%;
+    text-align: center; 
+    
+}
+#box-ten {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    margin: 2%;
+    text-align: center; 
 }
 
-.middle-content .boxes .box {
-    width: 12.5%;
-    height: 100px;
-    background: black;
-    margin: 20px 2.5%;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .bottom-content {
     display: flex;
-    margin: 0 2% 20px;
-    justify-content: space-around;
+    padding: 1%;
+    
+    width: 100%;
 }
 
 .bottom-content .text-container {
-    padding-right: 4%;
+    margin: 2%;
 }
 
-.bottom-content .text-container:last-child {
-    padding-right: 0;
-}
 
 footer {
-    width: 100%;
+    
     background: black;
+    width: 100%;
+    padding: 1.1%;
+    
+    
 }
 
 footer nav {
-    width: 60%;
+   width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 2%;
-    font-size: 14px;
+   
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+    
 }
+
+
+
+
+
+  
+
+
+@media (max-width: 800px){
+
+    
+nav {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    align-items: flex-end;
+    width: 80%;
+    margin-top: 3%; 
+    justify-content: space-between;
+
+}
+
+ 
+ nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+
+} 
+
+
+
+
+
+
+.top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% 0;
+    border-bottom: 1px dashed black;
+    
+    
+    
+}
+
+.top-content .text-container {
+    width: 100%;
+     padding: 2%; 
+     
+
+}
+
+
+
+
+
+    .middle-content  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center ;
+        
+      
+    } 
+    
+    .middle-content .boxes1{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        
+    }
+    .middle-content .boxes2{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+        
+    #box-one {
+        width: 150px;
+        height: 150px;
+         background-color: teal;
+         margin: 2%;
+         text-align: center; 
+            
+        
+         
+        
+    }
+    #box-two {
+        width: 150px;
+        height: 150px;
+        background-color: gold;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-three {
+        width: 150px;
+        height: 150px;
+        background-color: cadetblue;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-four {
+        width: 150px;
+        height: 150px;
+        background-color: coral;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-five {
+        width: 150px;
+        height: 150px;
+        background-color: crimson;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-six {
+        width: 150px;
+        height: 150px;
+        background-color: forestgreen;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-seven {
+        width: 150px;
+        height: 150px;
+        background-color: darkorchid;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-eight {
+        width: 150px;
+        height: 150px;
+        background-color: hotpink;
+        margin: 2%;
+        text-align: center; 
+      
+    }
+    #box-nine {
+        width: 150px;
+        height: 150px;
+        background-color: indigo;
+        margin: 2%;
+        text-align: center; 
+        
+    }
+    #box-ten {
+        width: 150px;
+        height: 150px;
+        background-color: dodgerblue;
+        margin: 2%;
+        text-align: center; 
+    }
+
+
+   
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+
+.bottom-content div:nth-child(1){
+   
+    flex-basis: 40%;
+} 
+.bottom-content div:nth-child(2){
+   
+    flex-basis: 40%;
+} 
+
+.bottom-content div:nth-child(3){
+   
+    flex-basis: 40%;
+} 
+
+
+}
+    
+
+
+
+
+
+
+
+
+@media (max-width: 500px){
+   
+    
+
+
+    
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin:0 auto;
+}
+
+body > div > header > nav > img {
+    margin-bottom: 4%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+    justify-content: space-between;
+
+}
+
+ 
+ nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5%;
+    font-size: 1.4rem;
+
+} 
+
+
+body > div > section.top-content > div:nth-child(1) > h2 {
+    font-size: 1.8rem;
+}
+body > div > section.top-content > div:nth-child(2) > h2 {
+    font-size: 1.8rem;
+}
+
+body > div > section:nth-child(3) > h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+.top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2% 0;
+    border-bottom: 1px dashed black;
+    
+    
+}
+
+
+
+
+    .middle-content  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+      
+    } 
+    
+    .middle-content .boxes1{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        align-items: center;
+        
+    }
+    .middle-content .boxes2{
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+    }
+        
+    #box-one {
+        width: 150px;
+        height: 150px;
+         background-color: teal;
+         margin: 2%;
+         text-align: center; 
+            
+        
+         
+        
+    }
+    #box-two {
+        width: 150px;
+        height: 150px;
+        background-color: gold;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-three {
+        width: 150px;
+        height: 150px;
+        background-color: cadetblue;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-four {
+        width: 150px;
+        height: 150px;
+        background-color: coral;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-five {
+        width: 150px;
+        height: 150px;
+        background-color: crimson;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-six {
+        width: 150px;
+        height: 150px;
+        background-color: forestgreen;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-seven {
+        width: 150px;
+        height: 150px;
+        background-color: darkorchid;
+        margin: 2%;
+        text-align: center; 
+    }
+    #box-eight {
+        width: 150px;
+        height: 150px;
+        background-color: hotpink;
+        margin: 2%;
+        text-align: center; 
+      
+    }
+    #box-nine {
+        width: 150px;
+        height: 150px;
+        background-color: indigo;
+        margin: 2%;
+        text-align: center; 
+        
+    }
+    #box-ten {
+        width: 150px;
+        height: 150px;
+        background-color: dodgerblue;
+        margin: 2%;
+        text-align: center; 
+    }
+
+
+    body > div > section.bottom-content{
+        flex-direction: column;
+    }
+    
+   footer {
+       display: flex;
+       justify-content: center;
+
+   }
+   footer nav a {
+       font-size: 1.4rem;
+       
+   }
+    }
+
